@@ -1,0 +1,32 @@
+{
+  "name": "node-hello-world-server",
+  "version": "0.0.0",
+  "description": "Super simple node.js server which listens on process.env[\"PORT\"] and responds to all requests with \"hello world\\n\"",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "''"
+  },
+  "keywords": [
+    "hello",
+    "world",
+    "server"
+  ],
+  "author": "Noah Isaacson",
+  "license": "BSD",
+  "dependencies": {
+    "should": "~1.2.2"
+  },
+  "devDependencies": {
+    "mocha": "~1.12.0",
+    "portfinder": "~0.2.1",
+    "request": "~2.22.0",
+    "eyespect": "~0.1.10"
+  }
+}
