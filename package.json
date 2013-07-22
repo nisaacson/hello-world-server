@@ -1,6 +1,6 @@
 {
   "name": "node-hello-world-server",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Super simple node.js server which listens on process.env[\"PORT\"] and responds to all requests with \"hello world\\n\"",
   "main": "index.js",
   "directories": {
