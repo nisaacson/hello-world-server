@@ -1,7 +1,7 @@
-var http = require('http')
+#!/usr/bin/env node
 var should = require('should')
-
 var port = process.env['PORT'] || 3000
+
 var app = require('./app')
 
 app(port, function (err, reply) {
