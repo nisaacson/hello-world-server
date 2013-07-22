@@ -9,10 +9,8 @@
   "scripts": {
     "test": "make test"
   },
-  "bin": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "''"
+  "bin": {
+    "hello-world-server": "index.js"
   },
   "keywords": [
     "hello",
@@ -29,5 +27,12 @@
     "portfinder": "~0.2.1",
     "request": "~2.22.0",
     "eyespect": "~0.1.10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nisaacson/hello-world-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nisaacson/hello-world-server/issues"
   }
 }
