@@ -11,7 +11,7 @@ The server responds to all requests with the content `"hello world\n"`
 # Installation
 
 ```bash
-[sudo] npm install -g node-hello-world-server
+[sudo] npm install -g hello-world-server
 ```
 
 # Usage
@@ -20,7 +20,7 @@ Once the package is installed globally, you can start it on the command line
 
 ```bash
 # start the server
-node-hello-world-server
+hello-world-server
 ```
 
 Then connect to the server to make sure it is running. You can visit [http://localhost:3000](http://localhost:3000) in your browser and you should see the text `"Hello World"` appear
