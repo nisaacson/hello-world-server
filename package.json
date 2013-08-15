@@ -10,7 +10,7 @@
     "test": "make test"
   },
   "bin": {
-    "hello-world-server": "index.js"
+    "hello-world-server": "start-web.js"
   },
   "keywords": [
     "hello",
