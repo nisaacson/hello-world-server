@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+
 var should = require('should')
 var port = process.env['PORT'] || 3000
 
