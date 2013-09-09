@@ -4,7 +4,7 @@ function install_json_extract {
     return
   fi
   echo '-----> installing json-extract now'
-  sudo npm install -g --silent json-extract
+  npm install -g --silent json-extract
 }
 
 install_json_extract
