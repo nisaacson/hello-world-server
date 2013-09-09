@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 install_json_extract() {
   command -v json-extract > /dev/null 2>&1
