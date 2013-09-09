@@ -1,4 +1,6 @@
-function install_json_extract {
+#!/bin/sh
+
+install_json_extract() {
   command -v json-extract > /dev/null 2>&1
   if [ $? -eq 0 ]; then
     return
