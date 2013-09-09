@@ -6,7 +6,7 @@ install_json_extract() {
     return
   fi
   echo '-----> installing json-extract now'
-  npm install -g --silent json-extract
+  npm install -g json-extract
 }
 
 install_json_extract
