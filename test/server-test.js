@@ -19,7 +19,12 @@ describe('Start server', function() {
       should.exist(reply)
       should.exist(reply.port, 'port field missing in reply')
       var url = 'http://localhost:' + reply.port
-      request(url, function(err, res, body) {
+      var requestOpts = {
+        url: url,
+        method: 'post',
+        body: 'fizz,buzy'
+      }
+      request(requestOpts, function(err, res, body) {
         should.not.exist(err)
         should.exist(body)
         res.statusCode.should.eql(200)

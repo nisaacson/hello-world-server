@@ -27,7 +27,24 @@ module.exports = function(port, cb) {
     inspect(req.headers, 'req.headers')
     inspect(req.url, 'req.url')
     inspect(req.body, 'req.body')
-    res.end(output)
+    var body =''
+    if (req.method.toLowerCase() !== 'post') {
+      return res.end(output)
+    }
+    req.on('data', function (data) {
+      body += data;
+      // 1e6 === 1 * Math.pow(10, 6) === 1 * 1000000 ~~~ 1MB
+      if (body.length > 1e6) {
+        // FLOOD ATTACK OR FAULTY CLIENT, NUKE REQUEST
+        req.connection.destroy();
+      }
+    })
+
+    req.on('end', function () {
+      inspect(body, 'post body')
+      res.end(output)
+    });
+
   }
 
 }
