@@ -19,7 +19,7 @@
   "author": "Noah Isaacson",
   "license": "BSD",
   "devDependencies": {
-    "mocha": "~1.12.0",
+    "mocha": "~1.17.1",
     "portfinder": "~0.2.1",
     "request": "~2.22.0",
     "eyespect": "~0.1.10",

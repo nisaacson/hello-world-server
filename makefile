@@ -1,6 +1,7 @@
 MOCHA?=node_modules/.bin/mocha
 REPORTER?=spec
-FLAGS=--reporter $(REPORTER)
+GROWL=--growl
+FLAGS=$(GROWL) --reporter $(REPORTER)
 test:
 	$(MOCHA) $(shell find test/* -prune -name "*-test.js") $(FLAGS)
 
