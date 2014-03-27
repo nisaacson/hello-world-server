@@ -31,5 +31,10 @@
   },
   "bugs": {
     "url": "https://github.com/nisaacson/hello-world-server/issues"
+  },
+  "dependencies": {
+    "connect": "^2.14.3",
+    "express": "^3.5.1",
+    "eyespect": "^0.1.10"
   }
 }

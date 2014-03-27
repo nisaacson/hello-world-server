@@ -1,7 +1,6 @@
 var should = require('should')
 var request = require('request')
 var portfinder = require('portfinder')
-var inspect = require('eyespect').inspector()
 
 describe('Start server', function() {
   var port
@@ -14,6 +13,7 @@ describe('Start server', function() {
   })
 
   it('should start server and response to requests with the content "hello world"', function(done) {
+    this.slow('1s')
     require('../app')(port, function(err, reply) {
       should.not.exist(err)
       should.exist(reply)
