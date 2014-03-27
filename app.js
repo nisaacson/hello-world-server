@@ -6,7 +6,7 @@ var http = require('http')
 module.exports = function(port, cb) {
   var app = express()
   app.use(connect.urlencoded())
-  app.use(connect.json())
+  //app.use(connect.json())
   app.all('*', requestHandler)
   var server = http.createServer(app)
   server.listen(port, listenCB)
