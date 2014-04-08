@@ -3,7 +3,12 @@
 A very simple node.js http server.
 
 # Port
- The server listens on `process.env["PORT"]` if that environment variable is set. Otherwise the server listens on port `3000` by default
+
+ The server looks for the following when determining the server port
+
+* `--port <integer>` command line flag
+* `process.env["PORT"]`
+* `3000` default
 
 # Response
 The server responds to all requests with the content `"hello world\n"`
@@ -22,6 +27,8 @@ Once the package is installed globally, you can start it on the command line
 # start the server
 hello-world-server
 ```
+
+To run on a
 
 Then connect to the server to make sure it is running. You can visit [http://localhost:3000](http://localhost:3000) in your browser and you should see the text `"Hello World"` appear
 

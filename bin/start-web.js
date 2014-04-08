@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
-var port = process.env.PORT || 3000
+var argv = require('yargs').argv
+var port = argv.port || process.env.PORT || 3000
 var app = require('../app')
 
 app(port, function (err, reply) {
